@@ -1,13 +1,13 @@
 # Learning Power BI
 
-# **Installing Power BI and Building the First Visualization**
+## **Installing Power BI and Building the First Visualization**
 
-## **Downloading and Installing Power BI Desktop**
+### **Downloading and Installing Power BI Desktop**
 
 - Power BI Desktop is free to download from the [Microsoft Store](https://www.microsoft.com/en-us/download/details.aspx?id=58494).
 - Once installed, open Power BI by searching for it in the Start menu.
 
-## **Importing Data into Power BI**
+### **Importing Data into Power BI**
 
 1. Click on **"Get Data"** in the Power BI interface.
 2. A window opens showing multiple data source options:
@@ -22,7 +22,7 @@
 
 ![image.png](image.png)
 
-## **Transforming Data Using Power Query**
+### **Transforming Data Using Power Query**
 
 - After loading the data, you can either:
     - **Load it directly** into Power BI.
@@ -32,7 +32,7 @@
     - Removing unnecessary data.
     - Filtering rows (e.g., removing milk from an apocalypse food prep list).
 
-### **Example Transformation Steps:**
+#### **Example Transformation Steps:**
 
 1. Renaming the "Date" column to **"Date_Purchased"**.
 2. Filtering out unwanted data (e.g., removing "Milk" as it's not useful for long-term storage).
@@ -40,7 +40,7 @@
     ![image.png](image%201.png)
     
 
-## **Understanding the Power BI Interface**
+### **Understanding the Power BI Interface**
 
 Power BI consists of three main tabs:
 
@@ -50,16 +50,16 @@ Power BI consists of three main tabs:
 
 ![image.png](image%202.png)
 
-# **Building the First Visualization**
+## **Building the First Visualization**
 
-## **Objective: Identify the Best Store for Purchasing Items**
+### **Objective: Identify the Best Store for Purchasing Items**
 
 - The dataset includes **store names, product types, and prices**.
 - The goal is to find:
     1. Where the least amount of money is spent for the same product.
     2. Whether all products should be purchased at one store or different stores.
 
-## **Steps to Create Visualizations:**
+### **Steps to Create Visualizations:**
 
 1. Select **"Store"** and **"Price"** columns.
 2. Use a **Stacked Column Chart** to visualize total spending per store.
@@ -73,7 +73,7 @@ Power BI consists of three main tabs:
 
 ![image.png](image%203.png)
 
-## **Customizing the Dashboard**
+### **Customizing the Dashboard**
 
 - Resize visualizations for a clearer layout.
 - Change titles:
@@ -84,9 +84,9 @@ Power BI consists of three main tabs:
 
 ![image.png](image%204.png)
 
-## **Using Power Query in Power BI**
+### **Using Power Query in Power BI**
 
-### **What is Power Query?**
+#### **What is Power Query?**
 
 Power Query is a **data transformation tool** within Power BI that allows you to:
 
@@ -97,7 +97,7 @@ Power Query is a **data transformation tool** within Power BI that allows you to
 
 **Why use Power Query?** It makes raw data more structured and usable for creating accurate visualizations.
 
-### **Importing Data into Power Query**
+#### **Importing Data into Power Query**
 
 1. Click **"Get Data"** → Select **Excel Workbook** → **Connect**.
 2. Choose the **Apocalypse Food Prep.xlsx** file.
@@ -106,7 +106,7 @@ Power Query is a **data transformation tool** within Power BI that allows you to
     - **Purchase Overview**
 4. Click **Transform Data** instead of Load.
 
-### **Understanding the Power Query Interface**
+#### **Understanding the Power Query Interface**
 
 - **Left Sidebar**: Shows queries (imported tables).
 - **Top Ribbon**:
@@ -116,26 +116,26 @@ Power Query is a **data transformation tool** within Power BI that allows you to
 - **Right Sidebar (Query Settings)**:
     - Applied Steps: Tracks every modification for easy rollback.
 
-# **Cleaning and Transforming Data**
+## **Cleaning and Transforming Data**
 
-## **Step 1: Remove Unnecessary Rows**
+### **Step 1: Remove Unnecessary Rows**
 
 - The first two rows in the **Purchase Overview** table contain null values.
 - Go to **Home Tab** → **Remove Rows** → **Remove Top Rows** → Enter **2** → **O**
 
-## **Step 2: Use First Row as Headers**
+### **Step 2: Use First Row as Headers**
 
 - The actual column names are in the first row.
 - Go to **Transform Tab** → Click **Use First Row as Headers**.
 
-## **Step 3: Changing Data Types**
+### **Step 3: Changing Data Types**
 
 - Power Query automatically assigns data types.
 - Ensure numbers representing money use a **Fixed Decimal** format.
     - Click on the **data type icon** (e.g., "1.2") → Select **Fixed Decimal Number**.
     - Apply this to all price-related columns.
 
-## **Step 4: Removing Totals and Subtotals**
+### **Step 4: Removing Totals and Subtotals**
 
 - The dataset contains **Costco Total, Target Total, Walmart Total, and Grand Total**, which are unnecessary.
 - Filter them out:
@@ -143,7 +143,7 @@ Power Query is a **data transformation tool** within Power BI that allows you to
 - Remove the **Grand Total column**:
     - Click on **Grand Total Column** → **Remove Columns**.
 
-## **Step 5: Unpivoting Data for Better Analysis**
+### **Step 5: Unpivoting Data for Better Analysis**
 
 - Dates (January 1st, February 1st, etc.) are column headers but should be in rows.
 - Select **all date columns**.
@@ -154,7 +154,7 @@ Power Query is a **data transformation tool** within Power BI that allows you to
 
 ![image.png](image%205.png)
 
-## **Finalizing and Loading the Data**
+### **Finalizing and Loading the Data**
 
 - Click **Close & Apply** to load the cleaned data into Power BI.
 - Verify the data in the **Data View**.
@@ -162,14 +162,14 @@ Power Query is a **data transformation tool** within Power BI that allows you to
 
 ![image.png](image%206.png)
 
-# **Creating and Managing Relationships in Power BI**
+## **Creating and Managing Relationships in Power BI**
 
-## **What are Relationships in Power BI?**
+### **What are Relationships in Power BI?**
 
 - When working with multiple tables from **different sources or the same source**, relationships allow data to be **connected** for analysis.
 - Power BI automatically **detects relationships**, but they can also be **manually created** or **edited**.
 
-### **Why relationships?**
+#### **Why relationships?**
 
 - They help connect datasets **logically** for meaningful analysis.
 - Avoids unnecessary duplication of data.
@@ -192,7 +192,7 @@ Power Query is a **data transformation tool** within Power BI that allows you to
     - Customer ID
     - Address, City, State, Zip Code
 
-## **Importing Data and Navigating to the Model View**
+### **Importing Data and Navigating to the Model View**
 
 1. Click **"Get Data"** → Select **Excel Workbook** → **Connect**.
 2. Choose all three tables (**Apocalypse Store, Apocalypse Sales, Customer Information**).
@@ -201,15 +201,15 @@ Power Query is a **data transformation tool** within Power BI that allows you to
 
 ![image.png](image%207.png)
 
-## **Understanding Relationships in Power BI**
+### **Understanding Relationships in Power BI**
 
-### **Existing Automatically Created Relationships**
+#### **Existing Automatically Created Relationships**
 
 - Power BI detects relationships **based on matching column names** and **similar data types**.
 - Relationships appear as **lines** connecting tables.
 - **Double-clicking a relationship line** brings up the **Edit Relationship** window.
 
-### **Key Relationship Properties**
+#### **Key Relationship Properties**
 
 1. **Cardinality**:
     - **One-to-Many (1:*M*)** – One table has unique values, and another has multiple corresponding values (e.g., Customers → Sales).
@@ -225,7 +225,7 @@ Power Query is a **data transformation tool** within Power BI that allows you to
 
 ![image.png](image%208.png)
 
-### **Editing an Existing Relationship**
+#### **Editing an Existing Relationship**
 
 1. **Open Model View** → **Double-click a relationship line**.
 2. **Change the Join Column** (e.g., use **Customer ID** instead of **Customer Name** for better consistency).
@@ -235,7 +235,7 @@ Power Query is a **data transformation tool** within Power BI that allows you to
 
 ![image.png](image%209.png)
 
-### **Manually Creating Relationships**
+#### **Manually Creating Relationships**
 
 If Power BI **does not detect** a relationship, it can be manually created:
 
@@ -248,7 +248,7 @@ If Power BI **does not detect** a relationship, it can be manually created:
 
 ![image.png](image%2010.png)
 
-### **Verifying Relationships with a Visualization**
+#### **Verifying Relationships with a Visualization**
 
 1. **Create a Table Visualization**.
 2. Add **State** (from Customer Information).
@@ -258,19 +258,19 @@ If Power BI **does not detect** a relationship, it can be manually created:
 
 ![image.png](image%2011.png)
 
-# **Introduction to DAX (Data Analysis Expressions)**
+## **Introduction to DAX (Data Analysis Expressions)**
 
-## **What is DAX?**
+### **What is DAX?**
 
 DAX (Data Analysis Expressions) is a **formula language** used in Power BI to create **calculated columns, measures, and tables**. It is similar to Excel formulas but optimized for Power BI's data model.
 
-### **Why use DAX?**
+#### **Why use DAX?**
 
 - Performs **advanced calculations** that cannot be done with basic visualizations.
 - Enables **dynamic aggregations** (e.g., total sales, average revenue).
 - Helps in creating **custom metrics** for reports and dashboards.
 
-## **DAX Essentials: Measures vs. Calculated Columns**
+### **DAX Essentials: Measures vs. Calculated Columns**
 
 | Feature | Measures | Calculated Columns |
 | --- | --- | --- |
@@ -284,9 +284,9 @@ DAX (Data Analysis Expressions) is a **formula language** used in Power BI to cr
 - **Measure**: `Total Sales = SUM(Sales[Revenue])`
 - **Calculated Column**: `Profit = Sales[Revenue] - Sales[Cost]`
 
-## **Creating a DAX Measure**
+### **Creating a DAX Measure**
 
-### **Example: Counting Total Sales**
+#### **Example: Counting Total Sales**
 
 1. Navigate to the **Report Tab**.
 2. Right-click **Apocalypse Sales** → **New Measure**.
@@ -301,9 +301,9 @@ DAX (Data Analysis Expressions) is a **formula language** used in Power BI to cr
 
 ![image.png](image%2012.png)
 
-## **Using DAX Aggregations**
+### **Using DAX Aggregations**
 
-### **Example: Summing Total Products Sold**
+#### **Example: Summing Total Products Sold**
 
 1. Create a new measure:
     
@@ -317,21 +317,21 @@ DAX (Data Analysis Expressions) is a **formula language** used in Power BI to cr
 
 ![image.png](image%2013.png)
 
-## **Iterator vs. Aggregator Functions**
+### **Iterator vs. Aggregator Functions**
 
-### **Understanding SUM vs. SUMX**
+#### **Understanding SUM vs. SUMX**
 
 - `SUM()` adds all values in a column (aggregates).
 - `SUMX()` calculates **row by row** before summing the results.
 
-### **Example: Calculating Profit**
+#### **Example: Calculating Profit**
 
 1. Create a new measure:
 2. This calculates **total** profit across all products.
 
 **Problem**: If we want **profit per product**, `SUM()` won’t work correctly. We need `SUMX()`.
 
-### **Solution: Using SUMX for Row-Level Calculation**
+#### **Solution: Using SUMX for Row-Level Calculation**
 
 1. Create a new column:
     
@@ -347,11 +347,11 @@ DAX (Data Analysis Expressions) is a **formula language** used in Power BI to cr
 
 ![image.png](image%2015.png)
 
-## **Working with Date Functions in DAX**
+### **Working with Date Functions in DAX**
 
 DAX provides several **date-based functions** to analyze trends.
 
-### **Example: Extracting the Day of the Week**
+#### **Example: Extracting the Day of the Week**
 
 1. Create a new column:
     
@@ -364,11 +364,11 @@ DAX provides several **date-based functions** to analyze trends.
 
 ![image.png](image%2016.png)
 
-## **Using IF Statements in DAX**
+### **Using IF Statements in DAX**
 
 The `IF()` function helps classify data.
 
-### **Example: Categorizing Order Sizes**
+#### **Example: Categorizing Order Sizes**
 
 1. Create a new column:
     
@@ -380,9 +380,9 @@ The `IF()` function helps classify data.
 
 ![image.png](image%2017.png)
 
-# **Using Drill Down in Power BI**
+## **Using Drill Down in Power BI**
 
-## **What is Drill Down?**
+### **What is Drill Down?**
 
 Drill Down allows users to **explore data hierarchically**, from a **high-level summary to detailed insights** within a visualization. It helps in:
 
@@ -390,16 +390,16 @@ Drill Down allows users to **explore data hierarchically**, from a **high-level 
 - **Providing interactive insights** during presentations.
 - **Allowing users to navigate up and down different data levels.**
 
-### **Drill Down Actions:**
+#### **Drill Down Actions:**
 
 1. **Drill Down** - Click a category to see its detailed breakdown.
 2. **Drill Up** - Move back to a higher-level summary.
 3. **Next Level** - Move down the hierarchy in a linear manner.
 4. **Expand All** - Show all levels at once instead of drilling down one at a time.
 
-## **Creating a Drill Down Hierarchy**
+### **Creating a Drill Down Hierarchy**
 
-### **Example: Exploring Store and Product Purchases**
+#### **Example: Exploring Store and Product Purchases**
 
 1. Create a **Clustered Column Chart** visualization.
 2. Add **Store Name** to the **X-axis**.
@@ -412,7 +412,7 @@ Drill Down allows users to **explore data hierarchically**, from a **high-level 
 - The visualization starts at the **store level**.
 - Users can **drill down into a store** to see **product-level spending**.
 
-## **Enabling Drill Down**
+### **Enabling Drill Down**
 
 Once a hierarchy is created, **Drill Down options** appear:
 
@@ -430,27 +430,27 @@ Once a hierarchy is created, **Drill Down options** appear:
 
 ![image.png](image%2019.png)
 
-## **Example Use Cases for Drill Down**
+### **Example Use Cases for Drill Down**
 
-### **1. Sales Analysis**
+#### **1. Sales Analysis**
 
 - Start with **Total Sales by Region**.
 - Drill down to **Sales by State**.
 - Further drill down to **Sales by City**.
 
-### **2. Customer Order Tracking**
+#### **2. Customer Order Tracking**
 
 - Show **Total Orders by Customer**.
 - Drill down to **Order IDs for each Customer**.
 - Further drill down to **Products in each Order**.
 
-### **3. Financial Reporting**
+#### **3. Financial Reporting**
 
 - Begin with **Total Company Expenses**.
 - Drill down to **Department-Level Expenses**.
 - Further drill down to **Expense Categories (e.g., Salaries, Rent, Software)**.
 
-## **Real-World Example: Order Tracking**
+### **Real-World Example: Order Tracking**
 
 1. Create a **Bar Chart** with:
     - **Customer Name** on the X-axis.
@@ -465,9 +465,9 @@ Once a hierarchy is created, **Drill Down options** appear:
 
 ![image.png](image%2021.png)
 
-# **Conditional Formatting in Power BI**
+## **Conditional Formatting in Power BI**
 
-## **What is Conditional Formatting?**
+### **What is Conditional Formatting?**
 
 Conditional Formatting allows users to **visually highlight** important data within tables and matrices by applying:
 
@@ -475,13 +475,13 @@ Conditional Formatting allows users to **visually highlight** important data wit
 - **Icons** to indicate specific thresholds.
 - **Data bars** to show relative magnitude within cells.
 
-### **Why use Conditional Formatting?**
+#### **Why use Conditional Formatting?**
 
 - Helps in **identifying trends and outliers quickly**.
 - Provides **context to raw numbers**.
 - Enhances **data storytelling in reports**.
 
-## **Applying Conditional Formatting**
+### **Applying Conditional Formatting**
 
 1. Create a **Table or Matrix visualization**.
 2. Add relevant fields (e.g., **Product Name, Price, Units Sold**).
@@ -492,9 +492,9 @@ Conditional Formatting allows users to **visually highlight** important data wit
     - **Icons**
     - **Data Bars**
 
-## **Types of Conditional Formatting**
+### **Types of Conditional Formatting**
 
-### **1. Background Color Formatting**
+#### **1. Background Color Formatting**
 
 - Colors the cell background based on value.
 - Useful for identifying **low and high values at a glance**.
@@ -509,7 +509,7 @@ Conditional Formatting allows users to **visually highlight** important data wit
 
 ![image.png](image%2022.png)
 
-### **2. Data Bars for Visual Emphasis**
+#### **2. Data Bars for Visual Emphasis**
 
 - **Adds horizontal bars** inside table cells to compare values visually.
 - Only available for **aggregated fields** (e.g., total sales, revenue).
@@ -524,7 +524,7 @@ Conditional Formatting allows users to **visually highlight** important data wit
 
 ![image.png](image%2023.png)
 
-### **3. Rule-Based Formatting**
+#### **3. Rule-Based Formatting**
 
 - Custom **if-then rules** to color-code cells.
 - Example: Flagging **low-selling products**.
@@ -538,7 +538,7 @@ Conditional Formatting allows users to **visually highlight** important data wit
     - **If Units Sold > 500 → Color: Green** (High Sales).
 3. Click **OK**.
 
-### **4. Icon-Based Formatting**
+#### **4. Icon-Based Formatting**
 
 - Adds **icons** (e.g., arrows, checkmarks, flags) to visually categorize data.
 - Works similarly to **Excel icon sets**.
@@ -552,7 +552,7 @@ Conditional Formatting allows users to **visually highlight** important data wit
     - **Green Up Arrow** = High Revenue.
 3. Click **OK**.
 
-## **Best Practices for Conditional Formatting**
+### **Best Practices for Conditional Formatting**
 
 - **Use sparingly** – Too many colors/icons can clutter reports.
 - **Stick to meaningful colors** (e.g., Red = warning, Green = positive).
@@ -561,26 +561,26 @@ Conditional Formatting allows users to **visually highlight** important data wit
 
 ![image.png](image%2024.png)
 
-# **Bins and Lists in Power BI**
+## **Bins and Lists in Power BI**
 
-## **What are Bins and Lists?**
+### **What are Bins and Lists?**
 
 Bins and Lists allow users to **group data into categories** for easier analysis.
 
 - **Lists** group **specific values** together (e.g., grouping customers into "Top Buyers" and "Low Buyers").
 - **Bins** categorize **numerical data into ranges** (e.g., age groups: 18-29, 30-39, etc.).
 
-### **Why use Bins and Lists?**
+#### **Why use Bins and Lists?**
 
 - **Simplifies large datasets** by grouping values into meaningful segments.
 - **Improves visualization clarity** by reducing unique data points.
 - **Helps in trend analysis** by focusing on grouped data instead of individual values.
 
-## **Creating a List in Power BI**
+### **Creating a List in Power BI**
 
 A **List** groups categorical data manually.
 
-### **Example: Grouping Customers by Performance**
+#### **Example: Grouping Customers by Performance**
 
 1. Navigate to **Apocalypse Sales** → Select **Customer**.
 2. Right-click on **Customer** → Click **New Group**.
@@ -598,11 +598,11 @@ A **List** groups categorical data manually.
 
 ![image.png](image%2025.png)
 
-## **Using Lists on Numerical Fields**
+### **Using Lists on Numerical Fields**
 
 Lists can also be created for **numeric values**, such as **Order ID**.
 
-### **Example: Categorizing Order IDs**
+#### **Example: Categorizing Order IDs**
 
 1. Navigate to **Order ID**.
 2. Right-click → Click **New Group**.
@@ -615,11 +615,11 @@ Lists can also be created for **numeric values**, such as **Order ID**.
 
 ![image.png](image%2026.png)
 
-## **Creating Bins in Power BI**
+### **Creating Bins in Power BI**
 
 A **Bin** divides **numerical data into predefined ranges**.
 
-### **Example: Categorizing Customers by Age**
+#### **Example: Categorizing Customers by Age**
 
 1. Navigate to **Customer Information** → Select **Age**.
 2. Right-click **Age** → Click **New Group**.
@@ -637,11 +637,11 @@ A **Bin** divides **numerical data into predefined ranges**.
 
 ![image.png](image%2027.png)
 
-## **Using Bins on Date Fields**
+### **Using Bins on Date Fields**
 
 Bins can also be applied to **date-based data**.
 
-### **Example: Grouping Sales by Month**
+#### **Example: Grouping Sales by Month**
 
 1. Navigate to **Apocalypse Sales** → Select **Date Purchased**.
 2. Right-click **Date Purchased** → Click **New Group**.
@@ -656,9 +656,9 @@ Bins can also be applied to **date-based data**.
 
 ![image.png](image%2028.png)
 
-## **Visualizing Bins and Lists**
+### **Visualizing Bins and Lists**
 
-### **1. Comparing Age Groups (Bins)**
+#### **1. Comparing Age Groups (Bins)**
 
 1. Create a **Bar Chart**.
 2. Add **Age Bins** to the X-axis.
@@ -667,7 +667,7 @@ Bins can also be applied to **date-based data**.
 
 ![image.png](image%2029.png)
 
-### **2. Analyzing Customer Performance (Lists)**
+#### **2. Analyzing Customer Performance (Lists)**
 
 1. Create a **Clustered Column Chart**.
 2. Add **Customer List (Best/Worst Prepping Stores)** to the X-axis.
@@ -676,19 +676,19 @@ Bins can also be applied to **date-based data**.
 
 ![image.png](image%2030.png)
 
-# **Popular Visualizations in Power BI**
+## **Popular Visualizations in Power BI**
 
-## **Choosing the Right Visualization**
+### **Choosing the Right Visualization**
 
 Power BI offers **various visualization types**, each suited for different kinds of analysis. This section covers **the most commonly used** visualizations.
 
-### **Why visualizations matter?**
+#### **Why visualizations matter?**
 
 - Helps in **interpreting complex data** easily.
 - Enhances **data storytelling** in reports and dashboards.
 - Different visualizations **highlight different insights**.
 
-## **1. Stacked Bar Chart**
+### **1. Stacked Bar Chart**
 
 - **Best for** comparing **categories and subcategories**.
 - Displays a total sum while breaking it into parts.
@@ -702,7 +702,7 @@ Power BI offers **various visualization types**, each suited for different kinds
 
 ![image.png](image%2031.png)
 
-## **2. 100% Stacked Column Chart**
+### **2. 100% Stacked Column Chart**
 
 - **Best for** understanding category proportions.
 - Each column represents 100%, with sections showing **relative contributions**.
@@ -716,7 +716,7 @@ Power BI offers **various visualization types**, each suited for different kinds
 
 ![image.png](image%2032.png)
 
-## **3. Line Chart**
+### **3. Line Chart**
 
 - **Best for** tracking trends over time.
 - Ideal for **date-based analysis**.
@@ -730,7 +730,7 @@ Power BI offers **various visualization types**, each suited for different kinds
 
 ![image.png](image%2033.png)
 
-## **4. Line & Clustered Column Chart**
+### **4. Line & Clustered Column Chart**
 
 - **Best for** showing **two different types of measures** together.
 - Combines **bar and line visualizations**.
@@ -744,7 +744,7 @@ Power BI offers **various visualization types**, each suited for different kinds
 
 ![image.png](image%2034.png)
 
-## **5. Scatter Plot**
+### **5. Scatter Plot**
 
 - **Best for** identifying **outliers and relationships between variables**.
 - Helps in **correlation analysis**.
@@ -759,7 +759,7 @@ Power BI offers **various visualization types**, each suited for different kinds
 
 ![image.png](image%2035.png)
 
-## **6. Donut & Pie Charts (Use with Caution)**
+### **6. Donut & Pie Charts (Use with Caution)**
 
 - **Best for** **showing parts of a whole**, but **not always the most readable**.
 - **Difficult to compare segment sizes** accurately.
@@ -777,7 +777,7 @@ Power BI offers **various visualization types**, each suited for different kinds
 
 ![image.png](image%2036.png)
 
-## **7. Card Visualization**
+### **7. Card Visualization**
 
 - **Best for** displaying **single summary values**.
 - **Commonly used at the top of dashboards**.
@@ -791,7 +791,7 @@ Power BI offers **various visualization types**, each suited for different kinds
 
 ![image.png](image%2037.png)
 
-## **8. Table Visualization**
+### **8. Table Visualization**
 
 - **Best for** displaying **detailed data in a structured format**.
 - **Similar to Excel tables**, allowing for row-level analysis.
@@ -805,7 +805,7 @@ Power BI offers **various visualization types**, each suited for different kinds
 
 ![image.png](image%2038.png)
 
-## **Less Commonly Used Visualizations**
+### **Less Commonly Used Visualizations**
 
 - **Area Charts** – Similar to line charts but shaded.
 - **Maps** – Used when location-based data is involved.
