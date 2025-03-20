@@ -38,7 +38,7 @@
     - Power BI will display available sheets. Select the desired sheet.
     - Click **Load** to import the data.
 
-![image.png](image.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image.png)
 
 ### **Transforming Data Using Power Query**
 
@@ -55,7 +55,7 @@
 1. Renaming the "Date" column to **"Date_Purchased"**.
 2. Filtering out unwanted data (e.g., removing "Milk" as it's not useful for long-term storage).
     
-    ![image.png](image%201.png)
+    ![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%201.png)
     
 
 ### **Understanding the Power BI Interface**
@@ -66,7 +66,7 @@ Power BI consists of three main tabs:
 2. **Data Tab** - Allows you to inspect and modify imported data.
 3. **Model Tab** - Helps create relationships between multiple tables (covered in later tutorials).
 
-![image.png](image%202.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%202.png)
 
 ## **Building the First Visualization**
 
@@ -89,7 +89,7 @@ Power BI consists of three main tabs:
 - The Stacked Column Chart showing spending at each store.
 - The Clustered Column Chart comparing product prices across stores.
 
-![image.png](image%203.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%203.png)
 
 ### **Customizing the Dashboard**
 
@@ -100,7 +100,7 @@ Power BI consists of three main tabs:
 - Add **Data Labels** to display exact numbers.
 - Adjust display settings to show full numeric values instead of rounded figures.
 
-![image.png](image%204.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%204.png)
 
 ### **Using Power Query in Power BI**
 
@@ -170,7 +170,7 @@ Power Query is a **data transformation tool** within Power BI that allows you to
     - **Attribute → Date**
     - **Value → Product Cost**
 
-![image.png](image%205.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%205.png)
 
 ### **Finalizing and Loading the Data**
 
@@ -178,7 +178,7 @@ Power Query is a **data transformation tool** within Power BI that allows you to
 - Verify the data in the **Data View**.
 - If more adjustments are needed, click **Transform Data** to return to Power Query.
 
-![image.png](image%206.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%206.png)
 
 ## **Creating and Managing Relationships in Power BI**
 
@@ -217,7 +217,7 @@ Power Query is a **data transformation tool** within Power BI that allows you to
 3. Click **Load** (No need to transform the data in this case).
 4. Navigate to **Model View (third tab on the left sidebar)** to see automatically created relationships.
 
-![image.png](image%207.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%207.png)
 
 ### **Understanding Relationships in Power BI**
 
@@ -241,7 +241,7 @@ Power Query is a **data transformation tool** within Power BI that allows you to
     - **Active** – The default relationship used for calculations.
     - **Inactive** – Not used unless explicitly referenced in formulas.
 
-![image.png](image%208.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%208.png)
 
 #### **Editing an Existing Relationship**
 
@@ -251,7 +251,7 @@ Power Query is a **data transformation tool** within Power BI that allows you to
 4. **Change Cross Filter Direction** to **Both** if necessary.
 5. **Click OK** to save changes.
 
-![image.png](image%209.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%209.png)
 
 #### **Manually Creating Relationships**
 
@@ -264,7 +264,7 @@ If Power BI **does not detect** a relationship, it can be manually created:
     - Change **Cross Filter Direction** to **Both** if needed.
     - Set **Cardinality** correctly (**One-to-Many** for Customers → Sales).
 
-![image.png](image%2010.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2010.png)
 
 #### **Verifying Relationships with a Visualization**
 
@@ -274,7 +274,7 @@ If Power BI **does not detect** a relationship, it can be manually created:
 4. Initially, the count might be incorrect (showing all products in all states).
 5. **Switch Cross Filter Direction to Both** → The visualization updates to show the correct counts per state.
 
-![image.png](image%2011.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2011.png)
 
 ## **Introduction to DAX (Data Analysis Expressions)**
 
@@ -317,7 +317,7 @@ DAX (Data Analysis Expressions) is a **formula language** used in Power BI to cr
 4. Press **Enter**. The measure now appears in the Fields pane.
 5. Drag it into a table visualization to display the count.
 
-![image.png](image%2012.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2012.png)
 
 ### **Using DAX Aggregations**
 
@@ -333,7 +333,7 @@ DAX (Data Analysis Expressions) is a **formula language** used in Power BI to cr
 
 **Key Takeaway**: `SUM()` is an **aggregator function**, summing all values in a column.
 
-![image.png](image%2013.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2013.png)
 
 ### **Iterator vs. Aggregator Functions**
 
@@ -361,9 +361,9 @@ DAX (Data Analysis Expressions) is a **formula language** used in Power BI to cr
 
 📌 **Screenshot Suggestion**: Show the difference between `SUM()` and `SUMX()` in a table.
 
-![image.png](image%2014.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2014.png)
 
-![image.png](image%2015.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2015.png)
 
 ### **Working with Date Functions in DAX**
 
@@ -380,7 +380,7 @@ DAX provides several **date-based functions** to analyze trends.
     - `2` makes Monday = `1`, Sunday = `7`.
 2. Use this to analyze **sales trends by day**.
 
-![image.png](image%2016.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2016.png)
 
 ### **Using IF Statements in DAX**
 
@@ -396,7 +396,7 @@ The `IF()` function helps classify data.
     
 2. This classifies **large vs. small orders**.
 
-![image.png](image%2017.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2017.png)
 
 ## **Using Drill Down in Power BI**
 
@@ -444,9 +444,9 @@ Once a hierarchy is created, **Drill Down options** appear:
     - Click **“Expand All”**.
     - The chart displays **both store and product details together**, instead of separating them.
 
-![image.png](image%2018.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2018.png)
 
-![image.png](image%2019.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2019.png)
 
 ### **Example Use Cases for Drill Down**
 
@@ -479,9 +479,9 @@ Once a hierarchy is created, **Drill Down options** appear:
 
 **Use Case**: This is useful when a **stakeholder** wants to analyze specific orders behind high-volume customers.
 
-![image.png](image%2020.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2020.png)
 
-![image.png](image%2021.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2021.png)
 
 ## **Conditional Formatting in Power BI**
 
@@ -525,7 +525,7 @@ Conditional Formatting allows users to **visually highlight** important data wit
     - **High values** = Red (expensive items).
 3. Click **OK**.
 
-![image.png](image%2022.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2022.png)
 
 #### **2. Data Bars for Visual Emphasis**
 
@@ -540,7 +540,7 @@ Conditional Formatting allows users to **visually highlight** important data wit
     - **Long bars** for high sales.
 3. Click **OK**.
 
-![image.png](image%2023.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2023.png)
 
 #### **3. Rule-Based Formatting**
 
@@ -577,7 +577,7 @@ Conditional Formatting allows users to **visually highlight** important data wit
 - **Use a combination** – **Data bars + color formatting** work well together.
 - **Keep it accessible** – Ensure colors/icons are readable by all users.
 
-![image.png](image%2024.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2024.png)
 
 ## **Bins and Lists in Power BI**
 
@@ -614,7 +614,7 @@ A **List** groups categorical data manually.
 - A new column is created that classifies customers as **Best or Worst Prepping Stores**.
 - This can now be used in visualizations.
 
-![image.png](image%2025.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2025.png)
 
 ### **Using Lists on Numerical Fields**
 
@@ -631,7 +631,7 @@ Lists can also be created for **numeric values**, such as **Order ID**.
 
 **Use Case**: This allows tracking of **early vs. recent orders** in a dataset.
 
-![image.png](image%2026.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2026.png)
 
 ### **Creating Bins in Power BI**
 
@@ -653,7 +653,7 @@ A **Bin** divides **numerical data into predefined ranges**.
     - 30-39
     - 40-49, etc.
 
-![image.png](image%2027.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2027.png)
 
 ### **Using Bins on Date Fields**
 
@@ -672,7 +672,7 @@ Bins can also be applied to **date-based data**.
 - A new column is created that groups sales into **monthly periods**.
 - This simplifies trend analysis.
 
-![image.png](image%2028.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2028.png)
 
 ### **Visualizing Bins and Lists**
 
@@ -683,7 +683,7 @@ Bins can also be applied to **date-based data**.
 3. Add **Number of Buyers** to the Y-axis.
 4. Analyze which age group has the most buyers.
 
-![image.png](image%2029.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2029.png)
 
 #### **2. Analyzing Customer Performance (Lists)**
 
@@ -692,7 +692,7 @@ Bins can also be applied to **date-based data**.
 3. Add **Units Sold** to the Y-axis.
 4. Compare sales between **Best and Worst Prepping Stores**.
 
-![image.png](image%2030.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2030.png)
 
 ## **Popular Visualizations in Power BI**
 
@@ -718,7 +718,7 @@ Power BI offers **various visualization types**, each suited for different kinds
 3. Add **Units Sold** to the X-axis.
 4. Drag **Product Name** to the **Legend** (color-coded by product).
 
-![image.png](image%2031.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2031.png)
 
 ### **2. 100% Stacked Column Chart**
 
@@ -732,7 +732,7 @@ Power BI offers **various visualization types**, each suited for different kinds
 3. Add **Units Sold** to the Y-axis.
 4. Add **Product Name** to the **Legend** (breaks sales into product categories).
 
-![image.png](image%2032.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2032.png)
 
 ### **3. Line Chart**
 
@@ -746,7 +746,7 @@ Power BI offers **various visualization types**, each suited for different kinds
 3. Add **Units Sold** to the Y-axis.
 4. Drag **Product Name** to the **Legend** (separate lines per product).
 
-![image.png](image%2033.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2033.png)
 
 ### **4. Line & Clustered Column Chart**
 
@@ -760,7 +760,7 @@ Power BI offers **various visualization types**, each suited for different kinds
 3. Add **Price** to **Column Y-axis**.
 4. Add **Production Cost** to **Line Y-axis**.
 
-![image.png](image%2034.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2034.png)
 
 ### **5. Scatter Plot**
 
@@ -775,7 +775,7 @@ Power BI offers **various visualization types**, each suited for different kinds
 4. Add **Product Name** to **Values** (each product becomes a point).
 5. Add **Product Name** to **Legend** (color-coded points).
 
-![image.png](image%2035.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2035.png)
 
 ### **6. Donut & Pie Charts (Use with Caution)**
 
@@ -793,7 +793,7 @@ Power BI offers **various visualization types**, each suited for different kinds
 - **Hard to distinguish slight differences in values**.
 - **Bar charts and column charts are often better alternatives**.
 
-![image.png](image%2036.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2036.png)
 
 ### **7. Card Visualization**
 
@@ -807,7 +807,7 @@ Power BI offers **various visualization types**, each suited for different kinds
 
 **Use Case**: Shows **total sales, average revenue, or order count** in a **concise, prominent format**.
 
-![image.png](image%2037.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2037.png)
 
 ### **8. Table Visualization**
 
@@ -821,7 +821,7 @@ Power BI offers **various visualization types**, each suited for different kinds
 
 **Use Case**: Ideal for **detailed reports** where users need **raw numbers**.
 
-![image.png](image%2038.png)
+![image.png](https://github.com/ndomah1/Learning-Power-BI/blob/main/images/image%2038.png)
 
 ### **Less Commonly Used Visualizations**
 
