@@ -1,5 +1,23 @@
 # Learning Power BI
 
+## Table of Contents
+- [Installing Power BI and Building the First Visualization](#installing-power-bi-and-building-the-first-visualization)
+  - [Downloading and Installing Power BI Desktop](#downloading-and-installing-power-bi-desktop)
+  - [Importing Data into Power BI](#importing-data-into-power-bi)
+  - [Transforming Data Using Power Query](#transforming-data-using-power-query)
+- [Building the First Visualization](#building-the-first-visualization)
+  - [Objective: Identify the Best Store for Purchasing Items](#objective-identify-the-best-store-for-purchasing-items)
+  - [Customizing the Dashboard](#customizing-the-dashboard)
+- [Using Power Query in Power BI](#using-power-query-in-power-bi)
+- [Cleaning and Transforming Data](#cleaning-and-transforming-data)
+- [Creating and Managing Relationships in Power BI](#creating-and-managing-relationships-in-power-bi)
+- [Introduction to DAX (Data Analysis Expressions)](#introduction-to-dax-data-analysis-expressions)
+  - [DAX Essentials: Measures vs. Calculated Columns](#dax-essentials-measures-vs-calculated-columns)
+- [Using Drill Down in Power BI](#using-drill-down-in-power-bi)
+- [Conditional Formatting in Power BI](#conditional-formatting-in-power-bi)
+- [Bins and Lists in Power BI](#bins-and-lists-in-power-bi)
+- [Popular Visualizations in Power BI](#popular-visualizations-in-power-bi)
+
 ## **Installing Power BI and Building the First Visualization**
 
 ### **Downloading and Installing Power BI Desktop**
